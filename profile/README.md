@@ -1,9 +1,3 @@
-<div align="center">
-  
-# RETRO J2ME
-
-</div>
-
 ## ABOUT
 
 RETROJ2ME 是一個規整自我封裝程式碼的 Organization。
@@ -57,28 +51,45 @@ RETROJ2ME 是一個規整自我封裝程式碼的 Organization。
 即便程式碼是 Vibe，我也希望它能夠得到應有的尊重，而不是被所謂『古法至上』的偏見貶為垃圾。
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["原始遊戲資產"]
 
-    subgraph B["封裝框架"]
-        direction TB
-        B1["共用封裝框架"]
-        B2["專案專屬封裝"]
-        B3["音頻引擎"]
-        B4["MIDP / CLDC API"]
+    subgraph FRAMEWORK["Runtime Wrapper Framework"]
+        direction LR
+        B["通用封裝程式"]
+        C["專屬封裝程式"]
+        D["音頻引擎"]
     end
 
-    C["ProGuard"]
-    D["最終 MIDP 應用"]
+    E["Java 編譯與整合"]
+    S["MIDP / CLDC API Stub"]
+    P["ProGuard"]
+    F["MIDP 應用程式"]
 
-    A --> B1
-    A --> B2
-    A --> B3
-    B3 --> B2
-    B4 --> B1
-    B1 --> C
-    B2 --> C
-    C --> D
+    A --> B
+    A --> C
+    A --> D
+
+    B --> E
+    C --> E
+    D --> E
+
+    S -.->|編譯期依賴| E
+
+    E --> P --> F
+
+    classDef asset fill:#1E293B,stroke:#64748B,color:#FFFFFF,stroke-width:1.5px
+    classDef module fill:#EFF6FF,stroke:#93C5FD,color:#1E40AF,stroke-width:1.5px
+    classDef build fill:#F1F5F9,stroke:#94A3B8,color:#334155,stroke-width:1.5px
+    classDef output fill:#0F766E,stroke:#115E59,color:#FFFFFF,stroke-width:1.5px
+
+    class A asset
+    class B,C,D module
+    class E,S,P build
+    class F output
+
+    style FRAMEWORK fill:transparent,stroke:#94A3B8,stroke-width:1px,stroke-dasharray:5 4
+    linkStyle default stroke:#94A3B8,stroke-width:1.5px
 ```
 
 ## License
