@@ -2,9 +2,9 @@
 
 RETROJ2ME 是一個規整自我封裝程式碼的 Organization。
 
-這裡的封裝，是指把一些較為封閉的 J2ME API『翻譯』為國際化的 MIDP API。
+這裡的封裝，是指對一些 J2ME API 規範互相『翻譯』令其彼此互相相容。
 
-現在，這裡只有 DoJa。未來會更加精彩。
+本組織的任何更新均由個人的興趣決定。
 
 
 ## Core
@@ -17,15 +17,18 @@ RETROJ2ME 是一個規整自我封裝程式碼的 Organization。
 **[MLD PLyaer](https://github.com/Magstic/MLD_Player)**  
 個人的一個獨立專案，專用於解碼 Docomo 的 MLD 旋律和採樣，它負責將 MLD 轉換為 MIDI 和 WAV，以供 MIDP 調用。
 
+
 ### Softbank Core（JSCL/VSCL/MEXA）
 
 工事中……
+
 
 ### Willcom Core（AIR EDGE）
 
 工事中……
 
-### SKT（SK-VM）
+
+### SKT Core（SK-VM）
 
 工事中……
 
@@ -110,6 +113,19 @@ RetroJ2ME 各專案的原創程式碼依其所屬 Repository 中標示的授權�
 RetroJ2ME 的開源授權不構成對這些內容的再散布許可。
 
 相關授權條件請參閱各 Repository 的 `LICENSE` 檔案及 [GNU GPLv3 官方全文](https://www.gnu.org/licenses/gpl-3.0.html)。
+
+
+## WARN
+
+一些『慷他人之慨的宵小之輩』已經嚴重觸及個人底線。
+
+重新散布本 Organization 中採用 GPLv3 的程式碼或預編譯 JAR 時，請遵守上方 License 章節及所屬 Repository 的授權條款。
+
+為了以儆效尤，震懾宵小，本 Organization 計劃參考 [FFmpeg 曾採用的 Hall of Shame 模式](https://ffmpeg.org/pipermail/ffmpeg-devel/2008-March/052760.html)，建立公開的違規散布紀錄。
+
+對於經查證、聯絡並警告後，仍拒絕補正或持續違規散布的個人或平台，將在此列出可核對的事實與處理進度。
+
+最終進度将連結至 [Hall of Shame](https://github.com/RetroJ2ME/Hall-of-Shame) Repository。
 
 ---
 
